@@ -316,13 +316,13 @@ function GetHostVars()
 		switch(arrPair[0])
 		{
 			case "artcommid":
-				strResult += "&vCommId=" + arrPair[1];
+				strResult += "&vCommId=" + encodeURI(arrPair[1]);
 				break;
 			case "arthostresume":
-				strResult += "&vResumeOverride=" + arrPair[1];
+				strResult += "&vResumeOverride=" + encodeURI(arrPair[1]);
 				break;
 			case "artvolume":
-				strResult += "&InitVolume=" + arrPair[1];
+				strResult += "&InitVolume=" + encodeURI(arrPair[1]);
 				break;
 		}
 	}
